@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instant Estimate Quiz | Ibrahim Mohammed Ahmed</title>
+  <meta name="description" content="Answer 8 quick questions to get an instant preliminary price range for your coding project, then send the full request to Ibrahim for review.">
+  <meta name="author" content="Ibrahim Mohammed Ahmed">
+  <meta name="theme-color" content="#0c0d10">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Instant Estimate Quiz | Ibrahim Mohammed Ahmed">
+  <meta property="og:description" content="Get an instant preliminary price range for your coding project.">
+  <meta property="og:site_name" content="Ibrahim Mohammed Ahmed">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="quiz-body">
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h.01M12 9h.01M16 9h.01"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><path d="M12 19h8"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><path d="M12 22.08V12"/></symbol>
+    <symbol id="i-game" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="13" r=".6"/><circle cx="18" cy="11" r=".6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to the quiz</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html#home" aria-label="Ibrahim Mohammed Ahmed, home page">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>Ibrahim Ahmed</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html#home" data-nav="home">Home</a></li>
+          <li><a href="index.html#services" data-nav="services">Services</a></li>
+          <li><a href="index.html#work" data-nav="work">Work</a></li>
+          <li><a href="index.html#technologies" data-nav="technologies">Technologies</a></li>
+          <li><a href="index.html#pricing" data-nav="pricing">Pricing</a></li>
+          <li><a href="index.html#faq" data-nav="faq">FAQ</a></li>
+          <li><a href="index.html#contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="quiz-page estimate" id="estimate" aria-labelledby="estimate-title">
+      <div class="container">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+        <div class="section-head">
+          <p class="section-kicker">instant estimate</p>
+          <h1 id="estimate-title">Instant Estimate Quiz</h1>
+          <p>Eight quick questions. You'll see a preliminary price range right away, then send the full request to me for review.</p>
+          <p class="saved-note" id="saved-note"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Your answers are saved on this device as you go, until you submit or reset.</p>
+        </div>
+
+        <div class="quiz-shell glass">
+          <form id="quiz" novalidate>
+            <div id="quiz-steps-wrap">
+              <div class="quiz-progress">
+                <div class="progress-meta">
+                  <span id="progress-label"><strong>Step 1</strong> of 8</span>
+                  <span class="progress-right"><span id="progress-name">Project type</span><button type="button" class="reset-link" id="reset-quiz">Reset quiz</button></span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1" id="progress-bar">
+                  <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <ol class="progress-dots" id="progress-dots" aria-hidden="true">
+                  <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li>
+                </ol>
+              </div>
+
+              <!-- STEP 1 -->
+              <fieldset class="q-step" data-step="1" data-name="Project type" aria-describedby="err-1">
+                <legend class="q-title" tabindex="-1">What are you building?</legend>
+                <p class="q-help">Pick the closest match.</p>
+                <div class="options">
+                  <label class="option"><input type="radio" name="project_type" value="Website"><span class="opt"><span class="emoji" aria-hidden="true">🌐</span><span class="opt-text"><span class="opt-main">Website</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Web App"><span class="opt"><span class="emoji" aria-hidden="true">📱</span><span class="opt-text"><span class="opt-main">Web App</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Discord Bot"><span class="opt"><span class="emoji" aria-hidden="true">🤖</span><span class="opt-text"><span class="opt-main">Discord Bot</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Python Project"><span class="opt"><span class="emoji" aria-hidden="true">🐍</span><span class="opt-text"><span class="opt-main">Python Project</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Automation / Script"><span class="opt"><span class="emoji" aria-hidden="true">⚙️</span><span class="opt-text"><span class="opt-main">Automation / Script</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Rust / C++ / Other Software"><span class="opt"><span class="emoji" aria-hidden="true">🦀</span><span class="opt-text"><span class="opt-main">Rust / C++ / Other Software</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Minecraft / Game Server"><span class="opt"><span class="emoji" aria-hidden="true">🎮</span><span class="opt-text"><span class="opt-main">Minecraft / Game Server</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="AI / API Project"><span class="opt"><span class="emoji" aria-hidden="true">🤖</span><span class="opt-text"><span class="opt-main">AI / API Project</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Bug Fix / Existing Project"><span class="opt"><span class="emoji" aria-hidden="true">🔧</span><span class="opt-text"><span class="opt-main">Bug Fix / Existing Project</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_type" value="Something Else"><span class="opt"><span class="emoji" aria-hidden="true">💻</span><span class="opt-text"><span class="opt-main">Something Else</span></span><span class="check" aria-hidden="true"></span></span></label>
+                </div>
+                <div class="field reveal-field" id="custom-type-field" hidden>
+                  <label for="custom_project_type">What kind of project is it?</label>
+                  <input type="text" id="custom_project_type" name="custom_project_type" maxlength="120" placeholder="e.g. Browser extension, Roblox game script, desktop tool...">
+                </div>
+                <p class="q-error" id="err-1" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 2 -->
+              <fieldset class="q-step" data-step="2" data-name="Project size" aria-describedby="err-2" hidden>
+                <legend class="q-title" tabindex="-1">How large is the project?</legend>
+                <p class="q-help">Your best guess is fine.</p>
+                <div class="options cols-1">
+                  <label class="option"><input type="radio" name="project_size" value="Tiny"><span class="opt"><span class="opt-text"><span class="opt-main">Tiny</span><span class="opt-sub">Small change or quick fix</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_size" value="Small"><span class="opt"><span class="opt-text"><span class="opt-main">Small</span><span class="opt-sub">Simple project with a few features</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_size" value="Medium"><span class="opt"><span class="opt-text"><span class="opt-main">Medium</span><span class="opt-sub">Multiple features/components</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_size" value="Large"><span class="opt"><span class="opt-text"><span class="opt-main">Large</span><span class="opt-sub">Complex project with many features</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="project_size" value="Major"><span class="opt"><span class="opt-text"><span class="opt-main">Major</span><span class="opt-sub">Large custom application/system</span></span><span class="check" aria-hidden="true"></span></span></label>
+                </div>
+                <p class="q-error" id="err-2" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 3 -->
+              <fieldset class="q-step" data-step="3" data-name="Features" aria-describedby="err-3" hidden>
+                <legend class="q-title" tabindex="-1">How many features do you need?</legend>
+                <p class="q-help">Count the separate things it needs to do.</p>
+                <div class="options">
+                  <label class="option"><input type="radio" name="feature_count" value="1–2"><span class="opt"><span class="opt-text"><span class="opt-main">1–2</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="feature_count" value="3–5"><span class="opt"><span class="opt-text"><span class="opt-main">3–5</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="feature_count" value="6–10"><span class="opt"><span class="opt-text"><span class="opt-main">6–10</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="feature_count" value="10+"><span class="opt"><span class="opt-text"><span class="opt-main">10+</span></span><span class="check" aria-hidden="true"></span></span></label>
+                </div>
+                <div class="field">
+                  <label for="main_features">What are the main features? <span class="optional">(optional)</span></label>
+                  <textarea id="main_features" name="main_features" maxlength="2000" placeholder="e.g. Login page, admin dashboard, /ban command, auto-backups..."></textarea>
+                </div>
+                <p class="q-error" id="err-3" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 4 -->
+              <fieldset class="q-step" data-step="4" data-name="Existing code" aria-describedby="err-4" hidden>
+                <legend class="q-title" tabindex="-1">Do you already have code?</legend>
+                <p class="q-help">This changes how much work is involved.</p>
+                <div class="options cols-1">
+                  <label class="option"><input type="radio" name="existing_code" value="No, start from scratch"><span class="opt"><span class="opt-text"><span class="opt-main">No, start from scratch</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="existing_code" value="Yes, I have an existing project"><span class="opt"><span class="opt-text"><span class="opt-main">Yes, I have an existing project</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="existing_code" value="I have code but it needs major changes"><span class="opt"><span class="opt-text"><span class="opt-main">I have code but it needs major changes</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="existing_code" value="I'm not sure"><span class="opt"><span class="opt-text"><span class="opt-main">I'm not sure</span></span><span class="check" aria-hidden="true"></span></span></label>
+                </div>
+                <p class="q-error" id="err-4" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 5 -->
+              <fieldset class="q-step" data-step="5" data-name="Timeline" aria-describedby="err-5" hidden>
+                <legend class="q-title" tabindex="-1">How soon do you need it?</legend>
+                <p class="q-help">Tighter timelines can affect the estimate.</p>
+                <div class="options">
+                  <label class="option"><input type="radio" name="timeline" value="No rush"><span class="opt"><span class="opt-text"><span class="opt-main">No rush</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="timeline" value="Within a week"><span class="opt"><span class="opt-text"><span class="opt-main">Within a week</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="timeline" value="3–7 days"><span class="opt"><span class="opt-text"><span class="opt-main">3–7 days</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="timeline" value="1–3 days"><span class="opt"><span class="opt-text"><span class="opt-main">1–3 days</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="timeline" value="As soon as possible"><span class="opt"><span class="opt-text"><span class="opt-main">As soon as possible</span></span><span class="check" aria-hidden="true"></span></span></label>
+                </div>
+                <p class="q-note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>This helps me gauge priority and complexity. It isn't a promised delivery date; I'll confirm a realistic timeline after reviewing your request.</span></p>
+                <p class="q-error" id="err-5" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 6 -->
+              <fieldset class="q-step" data-step="6" data-name="Budget" aria-describedby="err-6" hidden>
+                <legend class="q-title" tabindex="-1">What's your budget?</legend>
+                <p class="q-help">Every budget is welcome. If it's tight, we can talk about scope.</p>
+                <div class="options cols-3">
+                  <label class="option"><input type="radio" name="budget" value="$5–25"><span class="opt"><span class="opt-text"><span class="opt-main">$5–25</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="budget" value="$25–75"><span class="opt"><span class="opt-text"><span class="opt-main">$25–75</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="budget" value="$75–200"><span class="opt"><span class="opt-text"><span class="opt-main">$75–200</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="budget" value="$200–400"><span class="opt"><span class="opt-text"><span class="opt-main">$200–400</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="budget" value="$400–700"><span class="opt"><span class="opt-text"><span class="opt-main">$400–700</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="budget" value="$700–1,000+"><span class="opt"><span class="opt-text"><span class="opt-main">$700–1,000+</span></span><span class="check" aria-hidden="true"></span></span></label>
+                  <label class="option"><input type="radio" name="budget" value="I'm not sure"><span class="opt"><span class="opt-text"><span class="opt-main">I'm not sure</span></span><span class="check" aria-hidden="true"></span></span></label>
+                </div>
+                <p class="q-error" id="err-6" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 7 -->
+              <fieldset class="q-step" data-step="7" data-name="Description" aria-describedby="err-7" hidden>
+                <legend class="q-title" tabindex="-1">Tell me about the project</legend>
+                <p class="q-help">The more detail, the more accurate my final quote will be.</p>
+                <div class="field">
+                  <label for="project_description">Project description <span class="optional">(required)</span></label>
+                  <textarea class="tall" id="project_description" name="project_description" maxlength="5000" required aria-required="true" placeholder="Tell me exactly what you want built, fixed, automated, or changed..."></textarea>
+                  <p class="char-count" id="desc-count" aria-live="polite">0 / 5000</p>
+                </div>
+                <p class="q-error" id="err-7" role="alert"></p>
+              </fieldset>
+
+              <!-- STEP 8 -->
+              <fieldset class="q-step" data-step="8" data-name="Contact" aria-describedby="err-8" hidden>
+                <legend class="q-title" tabindex="-1">Where should I send your quote?</legend>
+                <p class="q-help">I'll reply to this email with a more accurate quote.</p>
+                <div class="contact-fields">
+                  <div class="field">
+                    <label for="name">Name <span class="optional">(required)</span></label>
+                    <input type="text" id="name" name="name" autocomplete="name" maxlength="100" required aria-required="true">
+                  </div>
+                  <div class="field">
+                    <label for="email">Email <span class="optional">(required)</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" inputmode="email" maxlength="160" required aria-required="true" placeholder="you@example.com">
+                  </div>
+                  <div class="field">
+                    <label for="discord">Your Discord username <span class="optional">(optional)</span></label>
+                    <input type="text" id="discord" name="discord" autocomplete="off" maxlength="60" placeholder="@username">
+                  </div>
+                </div>
+                <div class="hp-field" aria-hidden="true">
+                  <label for="botcheck">Leave this box unchecked</label>
+                  <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+                </div>
+                <p class="q-error" id="err-8" role="alert"></p>
+              </fieldset>
+
+              <div class="quiz-nav">
+                <button type="button" class="btn btn-text" id="quiz-back" hidden>← Back</button>
+                <button type="submit" class="btn btn-primary" id="quiz-next">Next</button>
+              </div>
+            </div>
+
+            <!-- RESULT -->
+            <div class="result" id="quiz-result" hidden>
+              <div class="result-head">
+                <h3 tabindex="-1" id="result-title">Your Instant Estimate</h3>
+                <p class="estimate-amount" id="estimate-amount">$75–200</p>
+                <span class="estimate-label">Preliminary only, not a final quote</span>
+              </div>
+
+              <dl class="summary" id="summary"></dl>
+              <div class="summary-desc">
+                <h4>Your description</h4>
+                <p id="summary-desc"></p>
+              </div>
+
+              <div class="next-box">
+                <h4>What's Next?</h4>
+                <p>Your project details will be sent to Ibrahim for review. I'll personally review your requirements and respond by email within 1–2 days with a more accurate quote and any questions about the project.</p>
+              </div>
+              <p class="disclaimer">This estimate is generated automatically and is not a final quote. The final price may change after reviewing the complete requirements.</p>
+
+              <p class="privacy"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><span>Your information is only used to review your project and contact you about your request.</span></p>
+              <p class="submit-status" id="submit-status" role="status" aria-live="polite"></p>
+              <div class="result-actions">
+                <button type="button" class="btn btn-primary" id="submit-request">Send My Request <span class="arrow" aria-hidden="true">→</span></button>
+                <button type="button" class="btn btn-ghost" id="change-answers">Change Answers</button>
+                <button type="button" class="btn btn-ghost" id="start-over">Start Over</button>
+              </div>
+            </div>
+
+            <!-- SUCCESS -->
+            <div class="result-state state-success" id="state-success" hidden>
+              <div class="state-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></div>
+              <h3 tabindex="-1" id="success-title">Estimate Submitted!</h3>
+              <p class="big">Your estimated range is: <strong id="success-range">$75–200</strong></p>
+              <p>I've received your project information. I'll review the details and respond to your email within 1–2 days with a more accurate quote.</p>
+              <div class="state-actions">
+                <a class="btn btn-ghost" href="index.html">Back to Home</a>
+                <button type="button" class="btn btn-ghost" id="new-request">Start a New Request</button>
+              </div>
+            </div>
+
+            <!-- ERROR -->
+            <div class="result-state state-error" id="state-error" hidden>
+              <div class="state-icon" aria-hidden="true"><svg class="icon"><use href="#i-alert"/></svg></div>
+              <h3 tabindex="-1" id="error-title">Something went wrong</h3>
+              <p>We couldn't submit your request right now. Your answers are still saved, so you can try again, or contact me directly.</p>
+              <p class="error-detail" id="error-detail" hidden></p>
+              <div class="direct-contact">
+                <div class="copy-row"><span>Commission Discord</span><code>@Ishowspeedismymom</code><button type="button" class="copy-mini" data-copy="@Ishowspeedismymom" aria-label="Copy commission Discord username">Copy</button></div>
+                <div class="copy-row"><span>Email</span><code>ibrahim.asim.contact@gmail.com</code><button type="button" class="copy-mini" data-copy="ibrahim.asim.contact@gmail.com" aria-label="Copy email address">Copy</button></div>
+              </div>
+              <div class="state-actions">
+                <button type="button" class="btn btn-primary" id="retry-submit">Try Again</button>
+                <button type="button" class="btn btn-ghost" id="back-to-result">Back to My Estimate</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Ibrahim Mohammed Ahmed. Bolingbrook, Illinois.</p>
+      <ul class="footer-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

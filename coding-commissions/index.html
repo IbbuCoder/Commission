@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ibrahim Mohammed Ahmed | Coding &amp; Technology</title>
+  <meta name="description" content="Custom coding, software, websites, bots, automation, AI integrations, servers, and technology solutions.">
+  <meta name="author" content="Ibrahim Mohammed Ahmed">
+  <meta name="theme-color" content="#0c0d10">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ibrahim Mohammed Ahmed | Coding &amp; Technology">
+  <meta property="og:description" content="Custom coding, software, websites, bots, automation, AI integrations, servers, and technology solutions.">
+  <meta property="og:site_name" content="Ibrahim Mohammed Ahmed">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ibrahim Mohammed Ahmed | Coding &amp; Technology">
+  <meta name="twitter:description" content="Custom coding, software, websites, bots, automation, AI integrations, servers, and technology solutions.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h.01M12 9h.01M16 9h.01"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><path d="M12 19h8"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><path d="M12 22.08V12"/></symbol>
+    <symbol id="i-game" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="13" r=".6"/><circle cx="18" cy="11" r=".6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Ibrahim Mohammed Ahmed, back to top">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>Ibrahim Ahmed</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#services" data-nav="services">Services</a></li>
+          <li><a href="#work" data-nav="work">Work</a></li>
+          <li><a href="#technologies" data-nav="technologies">Technologies</a></li>
+          <li><a href="#pricing" data-nav="pricing">Pricing</a></li>
+          <li><a href="#faq" data-nav="faq">FAQ</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="quiz.html">Get an Estimate</a>
+        <a class="btn btn-primary menu-cta" href="quiz.html">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-tag"><span class="dot" aria-hidden="true"></span>Open for coding commissions</p>
+          <h1 id="hero-title">
+            <span class="line">Coding Solutions.</span>
+            <span class="line line-2">Built For You.</span>
+          </h1>
+          <p class="hero-sub">Websites, software, bots, automation, AI, servers, APIs, and almost anything else that involves technology.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="quiz.html">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#work">View My Work</a>
+          </div>
+          <p class="hero-note">Projects from <strong>$5</strong> to <strong>$1,000+</strong></p>
+        </div>
+
+        <div>
+          <div class="terminal glass" role="img" aria-label="Example: a terminal calculating an instant estimate for a medium Discord bot project, resulting in an estimated range of $75 to $200.">
+            <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i><span>instant-estimate</span></div>
+            <pre id="terminal-text" aria-hidden="true"></pre>
+          </div>
+          <p class="terminal-caption">How the Instant Estimate works, in one example.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ALMOST ANYTHING ================= -->
+    <section class="anything section" id="anything" aria-labelledby="anything-title">
+      <div class="container anything-inner reveal">
+        <h2 id="anything-title">I Can Code Almost&nbsp;Anything.</h2>
+        <p class="lead">From a simple bug fix to a full custom application, I take on a wide range of coding and technology projects.</p>
+        <p class="ask">If it's code, software, automation, servers, AI, or technology-related, ask anyway.</p>
+        <ul class="badge-cloud reveal-stagger" aria-label="Technologies I take on">
+          <li>Python</li><li>C++</li><li>Rust</li><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>C#</li><li>Go</li><li>PHP</li><li>HTML</li><li>CSS</li><li>SQL</li><li>Lua</li><li>Luau</li><li>React</li><li>Node.js</li><li>Discord</li><li>Minecraft</li><li>AI</li><li>APIs</li><li>Automation</li><li>Linux</li><li>Docker</li><li>Git</li><li>GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">services</p>
+          <h2 id="services-title">What I can build for you</h2>
+          <p>These are the kinds of projects I take on most often. They're examples, not limits.</p>
+        </div>
+
+        <div class="services-grid reveal-stagger">
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-globe"/></svg></div>
+            <h3>Websites &amp; Web Apps</h3>
+            <ul><li>Custom websites</li><li>Landing pages</li><li>Web applications</li><li>Dashboards</li><li>Interactive interfaces</li><li>Responsive websites</li><li>GitHub Pages websites</li><li>HTML/CSS/JavaScript projects</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-chat"/></svg></div>
+            <h3>Discord Bots</h3>
+            <ul><li>Custom bots</li><li>Commands</li><li>Moderation</li><li>Automation</li><li>APIs</li><li>Webhooks</li><li>Server utilities</li><li>Custom integrations</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-terminal"/></svg></div>
+            <h3>Python</h3>
+            <ul><li>Scripts</li><li>Automation</li><li>Bots</li><li>APIs</li><li>Utilities</li><li>Data processing</li><li>Custom applications</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-cpu"/></svg></div>
+            <h3>C++ &amp; Systems</h3>
+            <ul><li>C++ projects</li><li>Utilities</li><li>Custom tools</li><li>Systems-oriented software</li><li>Performance-oriented applications</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-box"/></svg></div>
+            <h3>Rust</h3>
+            <ul><li>Rust applications</li><li>CLI tools</li><li>Utilities</li><li>Backend components</li><li>Performance-oriented software</li><li>General Rust projects</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-game"/></svg></div>
+            <h3>Games &amp; Servers</h3>
+            <ul><li>Minecraft</li><li>Paper</li><li>Spigot</li><li>Bukkit</li><li>Fabric</li><li>Forge</li><li>Plugins</li><li>Server configuration</li><li>RCON</li><li>Geyser</li><li>Floodgate</li><li>Server automation</li><li>Discord integrations</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-spark"/></svg></div>
+            <h3>AI &amp; APIs</h3>
+            <ul><li>AI integrations</li><li>AI APIs</li><li>LLM integrations</li><li>Chatbots</li><li>AI-powered applications</li><li>REST APIs</li><li>External service integrations</li><li>Automation</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-wrench"/></svg></div>
+            <h3>Debugging &amp; Custom Work</h3>
+            <ul><li>Bug fixes</li><li>Error troubleshooting</li><li>Existing-project modifications</li><li>Feature additions</li><li>Code cleanup</li><li>Performance improvements</li><li>Configuration problems</li></ul>
+          </article>
+          <article class="service glass">
+            <div class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-monitor"/></svg></div>
+            <h3>Custom Software</h3>
+            <ul><li>Custom utilities</li><li>Desktop-style applications</li><li>Developer tools</li><li>Automation tools</li><li>Custom software</li><li>Other programming projects</li></ul>
+          </article>
+        </div>
+
+        <div class="service-extra reveal">
+          <p><strong>Something else in mind?</strong>Have something that doesn't fit into one of these categories? That's completely fine. Tell me what you're trying to build.</p>
+          <a class="btn btn-primary" href="quiz.html">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">my work</p>
+          <h2 id="work-title">Things I've built and worked on</h2>
+          <p>A personal project I'm proud of, plus the areas I've spent real time building in.</p>
+        </div>
+
+        <div class="work-grid reveal-stagger">
+          <article class="work-card featured glass">
+            <div>
+              <span class="work-label">Personal Project</span>
+              <h3>IBR+</h3>
+              <p class="work-sub">Personal Media Application</p>
+              <p class="desc">A personal streaming-style media application focused on creating a polished viewing experience.</p>
+            </div>
+            <ul class="feature-list" aria-label="IBR+ features">
+              <li>Custom video interface</li>
+              <li>Custom UI</li>
+              <li>Video playback</li>
+              <li>Subtitle support</li>
+              <li>Local media organization</li>
+              <li>Custom application layout</li>
+              <li>Streaming-platform-inspired experience</li>
+            </ul>
+          </article>
+
+          <article class="work-card glass">
+            <span class="work-label muted">Hands-on work</span>
+            <h3>Minecraft Server &amp; Automation</h3>
+            <p class="desc">Work with Minecraft Java server technology and server-related systems.</p>
+            <ul class="tags"><li>Paper</li><li>Plugins</li><li>Server configuration</li><li>Player protection</li><li>Anti-griefing</li><li>RCON</li><li>Discord integrations</li><li>Automation</li><li>Server utilities</li><li>Player management</li></ul>
+          </article>
+
+          <article class="work-card glass">
+            <span class="work-label muted">Hands-on work</span>
+            <h3>Web Development</h3>
+            <p class="desc">Building responsive sites and custom interfaces for the web.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li><li>Responsive design</li><li>Custom interfaces</li><li>Web applications</li></ul>
+          </article>
+
+          <article class="work-card glass">
+            <span class="work-label muted">Hands-on work</span>
+            <h3>Programming &amp; Automation</h3>
+            <p class="desc">Scripts, tools, and fixes that make things run on their own.</p>
+            <ul class="tags"><li>Python scripts</li><li>Automation</li><li>Custom utilities</li><li>API integrations</li><li>Discord tools</li><li>Debugging</li><li>Existing-project modifications</li><li>Small custom applications</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNOLOGIES ================= -->
+    <section class="section" id="technologies" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">technologies</p>
+          <h2 id="tech-title">More Than Just Code.</h2>
+          <p>I work across programming, web development, software, AI, servers, networking, automation, hardware, operating systems, and other areas of technology.</p>
+        </div>
+
+        <div class="tech-tools" role="search">
+          <div class="search-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <label for="tech-search" class="visually-hidden">Search technologies</label>
+            <input type="search" id="tech-search" placeholder="Search technologies..." autocomplete="off" spellcheck="false" aria-controls="tech-grid" aria-describedby="tech-count">
+          </div>
+          <p class="tech-count" id="tech-count" aria-live="polite"></p>
+          <button type="button" class="btn btn-ghost tech-reset" id="tech-reset" hidden>Clear search</button>
+        </div>
+
+        <div class="tech-grid" id="tech-grid">
+          <article class="tech-group glass" data-keywords="languages code programming coding lang">
+            <h3>Programming Languages <small>25</small></h3>
+            <ul><li>Python</li><li>C</li><li>C++</li><li>C#</li><li>Java</li><li>JavaScript</li><li>TypeScript</li><li>Rust</li><li>Go</li><li>Kotlin</li><li>Swift</li><li>Dart</li><li>PHP</li><li>Ruby</li><li>Lua</li><li>Luau</li><li>R</li><li>SQL</li><li>Bash</li><li>PowerShell</li><li>MATLAB</li><li>Perl</li><li>Scala</li><li>Haskell</li><li>Assembly</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="web website frontend backend site webdev">
+            <h3>Web Development <small>15</small></h3>
+            <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Vite</li><li>Tailwind CSS</li><li>Bootstrap</li><li>REST APIs</li><li>JSON</li><li>WebSockets</li><li>PWA</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="database databases db data storage">
+            <h3>Databases <small>9</small></h3>
+            <ul><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>MongoDB</li><li>Redis</li><li>Firebase</li><li>Supabase</li><li>SQL</li><li>NoSQL</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="ai ml artificial intelligence machine learning llm gpt">
+            <h3>AI &amp; Machine Learning <small>10</small></h3>
+            <ul><li>AI APIs</li><li>LLM integrations</li><li>Chatbots</li><li>AI assistants</li><li>AI-powered websites</li><li>AI-powered applications</li><li>Automation</li><li>Machine learning concepts</li><li>Computer vision</li><li>Natural language processing</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="cloud hosting host deploy server">
+            <h3>Cloud &amp; Hosting <small>12</small></h3>
+            <ul><li>GitHub Pages</li><li>GitHub</li><li>Vercel</li><li>Netlify</li><li>Cloudflare</li><li>Firebase</li><li>Supabase</li><li>Docker</li><li>VPS hosting</li><li>Linux servers</li><li>DNS</li><li>Deployment</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="devops ops ci cd pipeline infrastructure">
+            <h3>DevOps <small>10</small></h3>
+            <ul><li>Git</li><li>GitHub Actions</li><li>CI/CD</li><li>Docker</li><li>Linux</li><li>Bash</li><li>PowerShell</li><li>Environment configuration</li><li>Server management</li><li>Automation</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="game games gaming gamedev">
+            <h3>Game Development <small>8</small></h3>
+            <ul><li>Minecraft</li><li>Roblox</li><li>Unity</li><li>Unreal Engine</li><li>Godot</li><li>Luau</li><li>Game scripting</li><li>Game servers</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="minecraft mc server servers plugin mods">
+            <h3>Minecraft <small>11</small></h3>
+            <ul><li>Paper</li><li>Spigot</li><li>Bukkit</li><li>Fabric</li><li>Forge</li><li>Plugins</li><li>Server configuration</li><li>RCON</li><li>Geyser</li><li>Floodgate</li><li>Server automation</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="network networking internet">
+            <h3>Networking <small>12</small></h3>
+            <ul><li>TCP/IP</li><li>HTTP/HTTPS</li><li>DNS</li><li>DHCP</li><li>LAN</li><li>Wi-Fi</li><li>Ethernet</li><li>SSH</li><li>VPNs</li><li>Ports</li><li>Firewalls</li><li>Network troubleshooting</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="os operating system systems">
+            <h3>Operating Systems <small>9</small></h3>
+            <ul><li>Windows</li><li>Linux</li><li>Ubuntu</li><li>Debian</li><li>Fedora</li><li>Arch Linux</li><li>macOS</li><li>Android</li><li>iOS</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="hardware pc computer build">
+            <h3>Hardware &amp; PC Technology <small>17</small></h3>
+            <ul><li>PC building</li><li>CPUs</li><li>GPUs</li><li>RAM</li><li>SSDs</li><li>HDDs</li><li>NVMe</li><li>Motherboards</li><li>Power supplies</li><li>Cooling</li><li>BIOS/UEFI</li><li>Drivers</li><li>Hardware troubleshooting</li><li>PC optimization</li><li>Peripherals</li><li>Monitors</li><li>Networking hardware</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="mobile phone app apps">
+            <h3>Mobile <small>7</small></h3>
+            <ul><li>Android</li><li>iOS</li><li>Mobile UI</li><li>Responsive applications</li><li>Mobile web</li><li>APIs</li><li>Cross-platform concepts</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="security secure auth defensive">
+            <h3>Security <small>9</small></h3>
+            <ul><li>Authentication</li><li>Authorization</li><li>Secure APIs</li><li>HTTPS</li><li>Input validation</li><li>Access control</li><li>Security best practices</li><li>Privacy-conscious application design</li><li>Basic security testing</li></ul>
+          </article>
+          <article class="tech-group glass" data-keywords="tools ide editor devtools developer">
+            <h3>Developer Tools <small>17</small></h3>
+            <ul><li>VS Code</li><li>PyCharm</li><li>Visual Studio</li><li>IntelliJ IDEA</li><li>Android Studio</li><li>GitHub Desktop</li><li>Git</li><li>Docker</li><li>Postman</li><li>npm</li><li>pip</li><li>CMake</li><li>Gradle</li><li>Maven</li><li>Terminal</li><li>PowerShell</li><li>Bash</li></ul>
+          </article>
+        </div>
+
+        <div class="tech-empty" id="tech-empty" hidden>
+          <h3>No match for "<span id="tech-empty-term"></span>"</h3>
+          <p>It's not on the list, but that doesn't mean I can't take it on. Describe the project and I'll let you know.</p>
+          <a class="btn btn-primary" href="quiz.html">Ask About It <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <p class="tech-disclaimer">Technologies I work with, build with, explore, troubleshoot, or can take on depending on the project. This isn't a claim of expert-level mastery in every one of them.</p>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">how it works</p>
+          <h2 id="how-title">From idea to quote in four steps</h2>
+        </div>
+        <ol class="steps reveal-stagger">
+          <li class="glass">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Tell Me Your Idea</h3>
+            <p>Explain what you want built, fixed, automated, or changed.</p>
+          </li>
+          <li class="glass">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Get an Instant Estimate</h3>
+            <p>Answer a few questions and immediately see a preliminary price range.</p>
+          </li>
+          <li class="glass">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>I Review It</h3>
+            <p>I'll personally review the complete request.</p>
+          </li>
+          <li class="glass">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Get Your Final Quote</h3>
+            <p>I'll respond by email within <strong>1–2 days</strong> with a more accurate quote and any questions.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">pricing</p>
+          <h2 id="pricing-title">Pricing that scales with the project</h2>
+          <p>Pick the range that sounds closest, then take the quiz for an estimate based on your actual project.</p>
+        </div>
+
+        <div class="pricing-grid reveal-stagger">
+          <article class="price-card glass" style="--fill:16%">
+            <h3>Quick Fix</h3>
+            <p class="price">$5–25</p>
+            <p>Small bugs, tiny changes, simple scripts, configuration help.</p>
+            <a class="btn btn-ghost" href="quiz.html?budget=1">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          </article>
+          <article class="price-card glass" style="--fill:33%">
+            <h3>Small Project</h3>
+            <p class="price">$25–75</p>
+            <p>Simple websites, bots, utilities, scripts, and basic features.</p>
+            <a class="btn btn-ghost" href="quiz.html?budget=2">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          </article>
+          <article class="price-card glass" style="--fill:50%">
+            <h3>Standard Project</h3>
+            <p class="price">$75–200</p>
+            <p>Websites, Discord bots, automation, APIs, and medium-sized applications.</p>
+            <a class="btn btn-primary" href="quiz.html?budget=3">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          </article>
+          <article class="price-card glass" style="--fill:66%">
+            <h3>Advanced Project</h3>
+            <p class="price">$200–400</p>
+            <p>Complex applications, advanced integrations, larger websites, and multi-feature projects.</p>
+            <a class="btn btn-ghost" href="quiz.html?budget=4">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          </article>
+          <article class="price-card glass" style="--fill:83%">
+            <h3>Large Project</h3>
+            <p class="price">$400–700</p>
+            <p>Large custom applications, advanced systems, and projects involving multiple components.</p>
+            <a class="btn btn-ghost" href="quiz.html?budget=5">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          </article>
+          <article class="price-card glass" style="--fill:100%">
+            <h3>Custom Project</h3>
+            <p class="price">$700–1,000+</p>
+            <p>Major custom projects with extensive functionality or development requirements.</p>
+            <a class="btn btn-ghost" href="quiz.html?budget=6">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <p class="pricing-note reveal"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Prices are estimates, not fixed packages. Final pricing depends on project requirements, complexity, features, development time, and scope.</span></p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="section-head reveal">
+          <p class="section-kicker">faq</p>
+          <h2 id="faq-title">Questions, answered</h2>
+          <p>Don't see yours? Ask in the project description and I'll answer when I reply.</p>
+        </div>
+        <div class="faq-list reveal-stagger">
+          <details class="faq-item">
+            <summary>What can you code?</summary>
+            <div class="answer"><p>Almost anything related to programming and technology, including websites, bots, scripts, automation, software, APIs, AI integrations, Minecraft/server projects, and more.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What languages do you work with?</summary>
+            <div class="answer"><p>Python, C++, Rust, JavaScript, TypeScript, Java, C#, Go, PHP, Lua, Luau, HTML, CSS, SQL, and many others depending on the project.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What if my project isn't listed?</summary>
+            <div class="answer"><p>Ask anyway. The services listed are examples, not limitations.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How does the Instant Estimate work?</summary>
+            <div class="answer"><p>The quiz uses the information you provide to calculate an initial estimated price range.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Is the Instant Estimate the final price?</summary>
+            <div class="answer"><p>No. It is an automated preliminary estimate. The final quote is determined after reviewing the complete project requirements.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Will my answers be sent to you?</summary>
+            <div class="answer"><p>Yes. After submission, the complete quiz response, including your contact information, project details, and preliminary estimate, is automatically sent for review.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>When will I hear back?</summary>
+            <div class="answer"><p>I'll review the submitted project and respond by email within <strong>1–2 days</strong>.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Can you work on existing code?</summary>
+            <div class="answer"><p>Yes. Existing projects can be debugged, modified, expanded, or improved depending on the codebase.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="section cta-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta-card reveal">
+          <h2 id="contact-title">Let's Build Something.</h2>
+          <p class="strong">Have an idea? Need something fixed? Want something completely custom?</p>
+          <p>Send me the project and get an instant preliminary estimate.</p>
+          <a class="btn btn-primary" href="quiz.html">Get an Instant Estimate <span class="arrow" aria-hidden="true">→</span></a>
+          <div class="contact-lines">
+            <button type="button" class="contact-chip copy-btn" data-copy="@Ishowspeedismymom" aria-label="Copy commission Discord username @Ishowspeedismymom">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>Commission Discord:</span> <b>@Ishowspeedismymom</b>
+            </button>
+            <a class="contact-chip" href="mailto:ibrahim.asim.contact@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Email:</span> <b>ibrahim.asim.contact@gmail.com</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Ibrahim Mohammed Ahmed. Bolingbrook, Illinois.</p>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="quiz.html">Instant Estimate</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
