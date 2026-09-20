@@ -15,7 +15,7 @@
    ║     Keep the quotes. Example:                                 ║
    ║     const WEB3FORMS_ACCESS_KEY = "a1b2c3d4-....";             ║
    ╚═══════════════════════════════════════════════════════════════╝ */
-const WEB3FORMS_ACCESS_KEY = "PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+const WEB3FORMS_ACCESS_KEY = "07b0f59f-629d-4588-a65b-9a3ef614c6f2";
 /* ═══════════════════ END OF THE PART YOU EDIT ═══════════════════ */
 
 
