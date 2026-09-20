@@ -5,15 +5,9 @@
 
 
 /* ╔═══════════════════════════════════════════════════════════════╗
-   ║  WEB3FORMS ACCESS KEY — PASTE YOUR KEY HERE                   ║
-   ║                                                               ║
-   ║  1. Create a free access key at https://web3forms.com using   ║
-   ║     the email ibrahim.asim.contact@gmail.com                  ║
-   ║     (Web3Forms delivers every submission to the email the     ║
-   ║     key was created with.)                                    ║
-   ║  2. Replace the text between the quotes below with your key.  ║
-   ║     Keep the quotes. Example:                                 ║
-   ║     const WEB3FORMS_ACCESS_KEY = "a1b2c3d4-....";             ║
+   ║  WEB3FORMS ACCESS KEY                                         ║
+   ║  Submissions go to the email the key was created with         ║
+   ║  (ibrahim.asim.contact@gmail.com). Keep the quotes.           ║
    ╚═══════════════════════════════════════════════════════════════╝ */
 const WEB3FORMS_ACCESS_KEY = "07b0f59f-629d-4588-a65b-9a3ef614c6f2";
 /* ═══════════════════ END OF THE PART YOU EDIT ═══════════════════ */
